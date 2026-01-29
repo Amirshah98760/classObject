@@ -289,4 +289,13 @@ const users ={
     }
 }
 
-console.log(users.userfullDetails())
+console.log(users.userfullDetails());
+
+class Admin extends User {
+    manageUsers(){
+        console.log('Managing Users')
+    }
+}
+
+const adminData = new Admin('Admin User', 'admin@example.com');
+
