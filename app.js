@@ -265,3 +265,28 @@ class Doctor {
 
 
 let engineerData = new Engineer('Software');
+
+
+class User {
+    constructo(name , email){
+        this.name = name;
+        this.email = email;
+    }
+
+    viewData(){
+        console.log(`Website Data`)
+    }
+}
+
+
+
+const users ={
+    userName:'amir shah',
+    userEmail:'amir@gmail.com',
+    userPassword:'amir123',
+    userfullDetails:function(){
+        console.log(this.userName,'\n' ,this.userEmail,'\n', this.userPassword)
+    }
+}
+
+console.log(users.userfullDetails())
